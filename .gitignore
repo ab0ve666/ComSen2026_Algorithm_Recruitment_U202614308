@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 数据集与模型权重（体积较大，不纳入版本控制）
+data/
+*.pt
+*.onnx
+*.engine
+*.pth
+
+# 生成的结果（视频/图片较大）
+**/outputs/
+!**/outputs/stats/*.json
+
+# 报告中间产物
+~$*.docx
+*.pdf.tmp
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
