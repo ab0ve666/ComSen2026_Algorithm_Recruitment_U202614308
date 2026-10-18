@@ -1,4 +1,4 @@
-﻿"""生成《算法组招新题目》任务报告（DOCX）。
+"""生成《算法组招新题目》任务报告（DOCX）。
 
 用法：
     python report/build_report.py
@@ -109,6 +109,9 @@ def add_field(paragraph, instr: str):
 class Report:
     def __init__(self):
         self.doc = Document()
+        self.doc.core_properties.author = "陶童"
+        self.doc.core_properties.title = "算法组招新任务实验报告"
+        self.doc.core_properties.subject = "task-2 / task-3 / task-4（题目一）"
         self.fig_no = {}
         self.tab_no = {}
         self._setup()
@@ -335,9 +338,9 @@ def cover(r: Report):
         r.doc.add_paragraph()
 
     info = [
-        ("姓    名", "________________"),
-        ("学    号", "________________"),
-        ("班    级", "________________"),
+        ("姓    名", "陶童"),
+        ("学    号", "U202614308"),
+        ("班    级", "光电2611"),
         ("完成内容", "task-2 / task-3 / task-4（题目一）"),
         ("日    期", "2026 年 10 月"),
     ]
